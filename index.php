@@ -1,3 +1,4 @@
+<?php require_once 'include/session_auth.php';?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +19,6 @@
 	</script>
 </head>
 <body>
-<?php require_once 'include/session_auth.php';?>
 <div id="layout">
 	<!-- Menu toggle -->
 	<a href="#menu" id="menuLink" class="menu-link">
@@ -29,7 +29,7 @@
 		<div class="pure-menu">
 			<a class="pure-menu-heading" href="#">S.A.C</a>
 			<ul class="pure-menu-list">
-				<li class="pure-menu-item"><a href="/SAC" class="pure-menu-link">Home</a></li>
+				<li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
 				<li class="pure-menu-item"><a href="Account" class="pure-menu-link">Account</a></li>
 				<li class="pure-menu-item"><a href="Wiki" class="pure-menu-link">Wiki</a></li>
 				<li class="pure-menu-item"><a href="Contact" class="pure-menu-link">Contact</a></li>

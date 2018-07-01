@@ -1,4 +1,13 @@
 <?php
-$appendFile = $_SERVER['DOCUMENT_ROOT'] . '/SAC/include/session_auth.php';
-require_once($appendFile);
+// Initialize the session
+session_start();
+
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['username']) || empty($_SESSION['username']))
+{
+    header("location: /login.php");
+    exit;
+} else {
+    session_write_close();
+}
 ?>
